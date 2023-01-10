@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Zilla Slab';
+    src: url("ZillaSlab-Light.ttf");
+  }
+
+
+body {
+    margin: 4px;
+    font-family: 'Zilla Slab';
+    color:black;
+    background-color: rgb(255, 245, 255);
+    margin-bottom: 0px;
+  }
+
+.container {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 35%;
+    padding-inline: 25% 25%;
+    font-size: 20px;
+}
+.title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    color: rgb(105, 0, 58);
+  }
