@@ -62,6 +62,11 @@ body {
     font-size: 20px;
 }
 
+.blogcontainer a {
+    color: rgb(105, 0, 58);
+    text-decoration: none;
+}
+
 .blogtitle {
     font-size: 65px;
 }
@@ -71,6 +76,7 @@ body {
     display: flex;
     border-bottom-style: dashed;
     border-bottom-width: 1px;
+    border-color: black;
   }
   
   .metadata {
@@ -104,6 +110,10 @@ body {
     text-decoration: none;
   }
 
+.column p {
+    color: black;
+}
+
 .datemins {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -111,3 +121,86 @@ body {
     font-size: 15px;
 }
 
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials img {
+    width: 30px;
+    opacity: 0.8;
+    padding-inline: 20px;
+}
+
+.socials img:hover {
+    width: 32px;
+}
+
+.projectbig {
+    padding-inline: 15% 15%;
+    padding-top: 2%;
+}
+
+@media screen and (max-width: 800px) {
+    .projectbig {
+        text-align: center;
+      padding-inline: 2% 2%;
+    }
+  }
+
+.projectcontainer {
+    display: flex;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    border-color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .projectcontainer {
+      flex-direction: column;
+    }
+  }
+
+.projecttitle {
+    font-size: 40px;
+    padding-bottom: 35px;
+}
+
+.projecttitle a {
+    color: rgb(105, 0, 58);
+    text-decoration: none;
+}
+
+.projectcontainer .column{
+    padding-bottom: 25px;
+    align-self: column;
+    padding-inline: 30px 30px;
+}
+
+.projectcontainer .column .info {
+    flex: 20%;
+}
+
+.projectcontainer .column .desc {
+    flex: 60%;
+}
+
+.projectpicture img {
+    width: 350px;
+}
+
+@media screen and (max-width: 800px) {
+    .projectcontainer .column {
+        padding-inline: 10px 10px;
+    }
+    .projectpicture {
+      width: 90%;
+    }
+  }
+
+.projectdescription {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
