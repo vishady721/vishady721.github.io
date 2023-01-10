@@ -20,7 +20,7 @@ body {
 }
 .title {
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .topnav {
@@ -47,3 +47,59 @@ body {
     color: rgb(105, 0, 58);
     text-decoration: underline;
   }
+
+  .blogcontainer {
+    position: relative;
+    padding-top: 5%;
+    padding-inline: 10% 10%;
+    font-size: 20px;
+}
+
+.blogtitle {
+    font-size: 55px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.row {
+    display: flex;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+  }
+  
+  .metadata {
+    flex: 20%;
+  }
+
+  .preview {
+    flex: 60%;
+  }
+
+.tag span{
+    background-color:rgb(42, 0, 105);
+    color: white;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 12px;
+}
+
+.posttitle {
+    font-size: 35px;
+}
+
+.date {
+    font-size: 15px;
+    color: rgb(61, 61, 61);
+    padding-bottom: 5px;
+}
+  
+.column a {
+    color: rgb(105, 0, 58);
+    text-decoration: none;
+  }
+
+.datemins {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(61, 61, 61);
+    font-size: 15px;
+}
