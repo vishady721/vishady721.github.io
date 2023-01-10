@@ -14,11 +14,7 @@ body {
 
 .container {
     position: relative;
-    left: 50%;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    padding-top: 35%;
+    padding-top: 10%;
     padding-inline: 25% 25%;
     font-size: 20px;
 }
@@ -35,8 +31,7 @@ body {
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: rgb(20, 20, 20);
-    text-align: center;
+    color: rgb(61, 61, 61);
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -50,4 +45,5 @@ body {
   /* Add a color to the active/current link */
   .topnav a.active {
     color: rgb(105, 0, 58);
+    text-decoration: underline;
   }
