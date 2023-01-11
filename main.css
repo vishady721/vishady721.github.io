@@ -15,8 +15,13 @@ body {
 .container {
     position: relative;
     padding-top: 10%;
-    padding-inline: 25% 25%;
+    padding-inline: 23% 23%;
     font-size: 20px;
+}
+
+.container a {
+    color: rgb(105, 0, 58);
+    text-decoration: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -122,6 +127,7 @@ body {
 }
 
 .socials {
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,8 +200,8 @@ body {
     .projectcontainer .column {
         padding-inline: 10px 10px;
     }
-    .projectpicture {
-      width: 90%;
+    .projectpicture img {
+        width: 90%;
     }
   }
 
@@ -204,3 +210,34 @@ body {
     padding-bottom: 20px;
     font-size: 20px;
 }
+
+.favoritessection {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.favoritessection ul {
+    font-size: 20px;
+}
+
+.favoritetitle {
+    font-size: 30px;
+}
+
+.favoritecontainer {
+    position: relative;
+    padding-top: 8%;
+    padding-inline: 15% 15%;
+    font-size: 20px;
+}
+
+.favoritecontainer a {
+    color: rgb(105, 0, 58);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .favoritecontainer {
+      padding-inline: 5% 5%;
+    }
+  }
