@@ -60,10 +60,16 @@ body {
     text-decoration: underline;
   }
 
+  .postcontainer {
+    position: relative;
+    padding-top: 5%;
+    padding-inline: 23% 23%;
+    font-size: 20px;
+}
   .blogcontainer {
     position: relative;
     padding-top: 5%;
-    padding-inline: 10% 10%;
+    padding-inline: 15% 15%;
     font-size: 20px;
 }
 
@@ -127,10 +133,17 @@ body {
 }
 
 .socials {
-    padding-top: 10px;
+    padding-top: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.socialsdesc {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .socials img {
@@ -169,13 +182,23 @@ body {
   }
 
 .projecttitle {
-    font-size: 40px;
+    font-size: 35px;
     padding-bottom: 35px;
 }
 
 .projecttitle a {
     color: rgb(105, 0, 58);
     text-decoration: none;
+}
+
+.specialtitle {
+  font-size: 35px;
+  padding-bottom: 5px;
+}
+
+.specialtitle a {
+  color: rgb(105, 0, 58);
+  text-decoration: none;
 }
 
 .projectcontainer .column{
@@ -205,10 +228,16 @@ body {
     }
   }
 
+
 .projectdescription {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 20px;
+}
+
+.projectsmall {
+  font-size: 20px;
+  padding-bottom: 30px;
 }
 
 .favoritessection {
@@ -226,7 +255,7 @@ body {
 
 .favoritecontainer {
     position: relative;
-    padding-top: 8%;
+    padding-top: 4%;
     padding-inline: 15% 15%;
     font-size: 20px;
 }
@@ -240,4 +269,21 @@ body {
     .favoritecontainer {
       padding-inline: 5% 5%;
     }
+    .blogcontainer {
+      padding-inline: 5% 5%;
+    }
+    .postcontainer {
+      padding-inline: 5% 5%;
+    }
   }
+
+.blogcontent {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 22px;
+}
+
+.blogcontent a {
+  color: rgb(105, 0, 58);
+  text-decoration: none;
+}
