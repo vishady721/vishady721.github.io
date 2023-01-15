@@ -8,20 +8,6 @@
         <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
 <body>
-    <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementsByClassName("topnav")[0];
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-        </script>
     <nav>
         <div class="topnav">
             <a class="active" href="/">home</a>
@@ -43,7 +29,20 @@
         <a href = "mailto:vishruti@mit.edu" target="_blank"><img src="email.png"></a>
     </div>
     </div>
-
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementsByClassName("topnav")[0];
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
     
 </body>
 </html>
