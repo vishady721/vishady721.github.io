@@ -41,6 +41,14 @@ body {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
   }
+
+  .topnav .right {
+    float: right;
+    color: rgb(61, 61, 61);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
   
   /* Style the links inside the navigation bar */
   .topnav a {
