@@ -46,8 +46,29 @@ body {
     float: right;
     color: rgb(61, 61, 61);
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: italic;
     font-size: 17px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .topnav .right {
+      display: none;
+    }
+  }
+
+  footer {
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(61, 61, 61);
+    font-size: 12px;
+    display: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    footer {
+      display: block;
+    }
   }
   
   /* Style the links inside the navigation bar */
