@@ -22,6 +22,7 @@
             <a href="/thoughts">thoughts</a>
             <a href="/projects">projects</a>
             <a href="/favorites">favorites</a>
+            <div class = "topnav buttonright"><button class="btn-toggle"><img class = "modeswitch"></button></div>
             <div class = "topnav right">vishruti ganesh</div>
         </div>
     </nav>
@@ -33,9 +34,9 @@
     <p>i am also a TA for <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank">6.1210 (6.006)</a>, MIT's introductory algorithms course, and was the co-chair of the <a href="http://comm.mit.edu" target="_blank">Council for Math Majors</a>. outside of school, i enjoy running, singing, and eating dark chocolate.</p>
     <div class = "socialsdesc"><p>please reach out for any reason : )</p></div>
     <div class = "socials">
-        <a href = "https://github.com/vishady721" target="_blank"><img src="github.png"></a>
-        <a href = "https://open.spotify.com/user/vishady721?si=715ea03087504776" target="_blank"><img src="spotify.png"></a>
-        <a href = "mailto:vishruti@mit.edu" target="_blank"><img src="email.png"></a>
+        <a href = "https://github.com/vishady721" target="_blank"><img class="github"></a>
+        <a href = "https://open.spotify.com/user/vishady721?si=715ea03087504776" target="_blank"><img class="spotify"></a>
+        <a href = "mailto:vishruti@mit.edu" target="_blank"><img class="email"></a>
     </div>
     </div>
     <footer>
@@ -54,6 +55,13 @@
             navbar.classList.remove("sticky");
           }
         }
+        </script>
+        <script>
+            // Select the button
+            const btn = document.querySelector('.btn-toggle');
+            btn.addEventListener('click', function() {
+            document.querySelector('body').classList.toggle('dark-theme');  
+            })
         </script>
     
 </body>

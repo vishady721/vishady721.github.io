@@ -21,6 +21,7 @@
         <a href="/thoughts">thoughts</a>
         <a href="/projects">projects</a>
         <a href="/favorites">favorites</a>
+        <div class = "topnav buttonright"><button class="btn-toggle"><img class = "modeswitch"></button></div>
         <div class = "topnav right">vishruti ganesh</div>
     </div>
     <div class="postcontainer">
@@ -60,6 +61,13 @@
             navbar.classList.remove("sticky");
           }
         }
+        </script>
+        <script>
+            // Select the button
+            const btn = document.querySelector('.btn-toggle');
+            btn.addEventListener('click', function() {
+            document.querySelector('body').classList.toggle('dark-theme');  
+            })
         </script>
 </body>
 </html>

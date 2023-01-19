@@ -12,6 +12,11 @@ body {
     margin-bottom: 0px;
   }
 
+body.dark-theme {
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
 .container {
     position: relative;
     padding-top: 9%;
@@ -21,6 +26,11 @@ body {
 
 .container a {
     color: rgb(105, 0, 58);
+    text-decoration: none;
+}
+
+.dark-theme .container a{
+    color: rgb(255, 202, 255);
     text-decoration: none;
 }
 
@@ -42,12 +52,25 @@ body {
     overflow: hidden;
   }
 
+  .dark-theme .topnav  {
+    background-color: rgb(61, 61, 61);
+  }
+
   .topnav .right {
     float: right;
     color: rgb(61, 61, 61);
     padding: 14px 16px;
     font-style: italic;
     font-size: 17px;
+  }
+
+  .topnav .buttonright {
+    float: right;
+    padding: 9px;
+  }
+
+  .dark-theme .topnav  .right {
+    color: rgb(255, 245, 255);
   }
 
   @media screen and (max-width: 800px) {
@@ -65,6 +88,10 @@ body {
     display: none;
   }
 
+  .dark-theme footer {
+    color: rgb(255, 245, 255);
+  }
+
   @media screen and (max-width: 800px) {
     footer {
       display: block;
@@ -79,15 +106,28 @@ body {
     text-decoration: none;
     font-size: 17px;
   }
+
+  .dark-theme .topnav a {
+    color: rgb(255, 245, 255);
+  }
   
   /* Change the color of links on hover */
   .topnav a:hover {
     color: black;
   }
+
+  .dark-theme .topnav a:hover {
+    color: white;
+  }
   
   /* Add a color to the active/current link */
   .topnav a.active {
     color: rgb(105, 0, 58);
+    text-decoration: underline;
+  }
+
+  .dark-theme .topnav a.active {
+    color: rgb(255, 202, 255);
     text-decoration: underline;
   }
 
@@ -123,6 +163,11 @@ body {
     text-decoration: none;
 }
 
+.dark-theme .blogconatiner a {
+    color: rgb(255, 202, 255);
+    text-decoration: none;
+}
+
 .blogtitle {
     font-size: 65px;
 }
@@ -133,6 +178,10 @@ body {
     border-bottom-style: dashed;
     border-bottom-width: 1px;
     border-color: black;
+  }
+
+  .dark-theme .row {
+    border-color: white;
   }
   
   .metadata {
@@ -160,14 +209,26 @@ body {
     color: rgb(61, 61, 61);
     padding-bottom: 5px;
 }
+
+.dark-theme .date {
+  color: rgb(255, 245, 255);
+}
   
 .column a {
     color: rgb(105, 0, 58);
     text-decoration: none;
   }
 
+  .dark-theme .column a {
+    color: rgb(255, 202, 255);
+  }
+
 .column p {
     color: black;
+}
+
+.dark-theme .column p {
+  color: white;
 }
 
 .datemins {
@@ -175,6 +236,10 @@ body {
     padding-bottom: 10px;
     color: rgb(61, 61, 61);
     font-size: 15px;
+}
+
+.dark-theme .datemins {
+  color: rgb(255, 245, 255);
 }
 
 .socials {
@@ -202,6 +267,43 @@ body {
     width: 32px;
 }
 
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+
+.btn-toggle .modeswitch {
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0px;
+  border: none;
+  width: 30px;
+  content: url("darkmode.png");
+}
+
+.dark-theme .btn-toggle .modeswitch {
+  content: url("lightmode.png");
+}
+
+.socials .github {
+  content: url("github.png");
+}
+
+.dark-theme .socials .github {
+  content: url("githubdark.png");
+}
+
+.socials .spotify {
+  content: url("spotify.png");
+}
+
+.socials .email {
+  content: url("email.png");
+}
+.dark-theme .socials .email {
+  content: url("emaildark.png");
+}
+
 .projectbig {
     padding-inline: 15% 15%;
     padding-top: 2%;
@@ -221,6 +323,10 @@ body {
     border-color: black;
 }
 
+.dark-theme .projectcontainer {
+  border-color: white;
+}
+
 @media screen and (max-width: 800px) {
     .projectcontainer {
       flex-direction: column;
@@ -237,6 +343,10 @@ body {
     text-decoration: none;
 }
 
+.dark-theme .projecttitle a {
+  color: rgb(255, 202, 255);
+}
+
 .specialtitle {
   font-size: 35px;
   padding-bottom: 5px;
@@ -245,6 +355,10 @@ body {
 .specialtitle a {
   color: rgb(105, 0, 58);
   text-decoration: none;
+}
+
+.dark-theme .specialtitle a {
+  color: rgb(255, 202, 255);
 }
 
 .projectcontainer .column{
@@ -311,6 +425,10 @@ body {
     text-decoration: none;
 }
 
+.dark-theme .favoritecontainer a {
+  color: rgb(255, 202, 255);
+}
+
 @media screen and (max-width: 800px) {
     .favoritecontainer {
       padding-inline: 5% 5%;
@@ -332,4 +450,8 @@ body {
 .blogcontent a {
   color: rgb(105, 0, 58);
   text-decoration: none;
+}
+
+.dark-theme .blogcontent a {
+  color: rgb(255, 202, 255);
 }
