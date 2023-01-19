@@ -163,7 +163,7 @@ body.dark-theme {
     text-decoration: none;
 }
 
-.dark-theme .blogconatiner a {
+.dark-theme .blogcontainer a {
     color: rgb(255, 202, 255);
     text-decoration: none;
 }
@@ -198,6 +198,11 @@ body.dark-theme {
     border-radius: 5px;
     padding: 4px;
     font-size: 12px;
+}
+
+.dark-theme .tagstuffy span{
+  background-color:rgb(216, 190, 255);
+  color: rgb(0, 0, 0);
 }
 
 .posttitle {
