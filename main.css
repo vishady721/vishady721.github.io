@@ -67,6 +67,7 @@ body.dark-theme {
   .topnav .buttonright {
     float: right;
     padding: 9px;
+    padding-right: 14px;
   }
 
   .dark-theme .topnav  .right {
@@ -81,21 +82,15 @@ body.dark-theme {
 
   footer {
     text-align: center;
-    padding: 5px;
+    padding-top: 30px;
     background-color: rgba(255, 255, 255, 0);
     color: rgb(61, 61, 61);
     font-size: 12px;
-    display: none;
+    display: block;
   }
 
   .dark-theme footer {
     color: rgb(255, 245, 255);
-  }
-
-  @media screen and (max-width: 800px) {
-    footer {
-      display: block;
-    }
   }
   
   /* Style the links inside the navigation bar */
