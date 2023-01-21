@@ -8,7 +8,7 @@ body {
     margin: 4px;
     font-family: 'Zilla Slab';
     color:black;
-    background-color: rgb(255, 245, 255);
+    background-color: white;
     margin-bottom: 0px;
   }
 
@@ -17,33 +17,6 @@ body.dark-theme {
     background-color: rgb(0, 0, 0);
 }
 
-.container {
-    position: relative;
-    padding-top: 9%;
-    padding-inline: 23% 23%;
-    font-size: 20px;
-}
-
-.container a {
-    color: rgb(105, 0, 58);
-    text-decoration: none;
-}
-
-.dark-theme .container a{
-    color: rgb(255, 202, 255);
-    text-decoration: none;
-}
-
-@media screen and (max-width: 800px) {
-    .container {
-      padding-inline: 5% 5%;
-    }
-  }
-
-.title {
-    text-align: center;
-    font-size: 65px;
-}
 
 .topnav {
     padding-top: 0px;
@@ -148,8 +121,7 @@ body.dark-theme {
 }
   .blogcontainer {
     position: relative;
-    padding-top: 5%;
-    padding-inline: 15% 15%;
+    padding-top: 2%;
     font-size: 20px;
 }
 
@@ -305,7 +277,6 @@ button {
 }
 
 .projectbig {
-    padding-inline: 15% 15%;
     padding-top: 2%;
 }
 
@@ -364,7 +335,7 @@ button {
 .projectcontainer .column{
     padding-bottom: 25px;
     align-self: column;
-    padding-inline: 30px 30px;
+    padding-inline: 15px 15px;
 }
 
 .projectcontainer .column .info {
@@ -376,7 +347,7 @@ button {
 }
 
 .projectpicture img {
-    width: 350px;
+    width: 300px;
 }
 
 @media screen and (max-width: 800px) {
@@ -454,4 +425,97 @@ button {
 
 .dark-theme .blogcontent a {
   color: rgb(255, 202, 255);
+}
+
+
+.box {
+  padding-top: 6%;
+  padding-inline: 23% 23%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlisttitle {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 10% 5%;
+  padding-top: 3%;
+  font-size: 65px;
+}
+
+.playlistmeta {
+  font-size: 17px;
+  color:rgb(61, 61, 61);
+  text-align: left;
+}
+
+a {
+  color: rgb(105, 0, 58);
+  text-decoration: none;
+}
+
+.dark-theme a {
+color: rgb(255, 202, 255);
+}
+
+.playlistimage img{
+  width: 150px;
+}
+
+.playlisttop {
+ display: flex;
+ padding-top: 2%;
+ padding-bottom: 2%;
+ border-radius: 5px;
+ border-color: pink;
+ border-width: 1px;
+ border-style: dashed;
+ justify-content: center;
+}
+
+.playlistdesc {
+  padding-inline: 3% 3%;
+  font-size: 20px;
+}
+
+.buttons {
+  padding-bottom: 5%;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+}
+
+.navbutton {
+  padding-inline: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbutton a {
+  color: rgb(61, 61, 61);
+  text-align: center;
+}
+.navbutton img {
+  width: 40px;
+}
+
+.navbutton a:hover {
+  color: black;
+}
+
+.navbutton a.active{
+  color: rgb(105, 0, 58);
+  text-decoration: underline;
+}
+
+.navbuttontitle {
+  text-align: center;
+  font-size: 15px;
 }

@@ -16,31 +16,95 @@
         <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
 <body>
-    <nav>
-        <div class="topnav">
-            <a class="active" href="/">home</a>
-            <a href="/thoughts">thoughts</a>
-            <a href="/projects">projects</a>
-            <a href="/favorites">favorites</a>
-            <div class = "topnav buttonright"><button class="btn-toggle"><img class = "modeswitch"></button></div>
+
+    <div class = "box">
+        
+        <div class = "playlist">
+            <div class = "buttons">
+                
+                <div class = "navbutton">
+                    <a href="index.html" class="active">
+                    <img src="play.png">
+                    <div class = "navbuttontitle">
+                        home
+                    </div>
+                    </a>
+                </div>
+                
+                
+                <div class = "navbutton">
+                    <a href="/thoughts">
+                    <img src="ff.png">
+                    <div class = "navbuttontitle">
+                        thoughts
+                    </div>
+                    </a>
+                </div>
+                
+                
+                <div class = "navbutton">
+                    <a href="/projects">
+                    <img src="shuffle.png">
+                    <div class = "navbuttontitle">
+                        projects
+                    </div>
+                    </a>
+                </div>
+                
+                
+                <div class = "navbutton">
+                    <a href="/favorites">
+                    <img src="loop.png">
+                    <div class = "navbuttontitle">
+                        favorites
+                    </div>
+                    </a>
+                </div>
+                
+            </div>
+            <div class = "playlisttop">
+                <div class = "playlistimage">
+                    <img src = "mainpage.png">
+                </div>
+                <div class = "playlisttitle">
+                    hii!! i'm vishruti.
+                    <div class = "playlistmeta">
+                        PUBLIC PLAYLIST • 21 songs
+                    </div>
+                </div>
+            </div>
+            <div class = "playlistdesc">
+                <p>welcome to my playlist: a discontinuous collection of songs--a (not so) random sampling of my life--that i choose to make public. thank you for taking the time to listen, and i hope that maybe some of these songs will make it to your playlist too!</p>
+                <p>a good portion of my recently-added songs have been in Boston. i'm currently a senior at MIT, majoring in math and computer science, and minoring in music. you'll also find some songs from my past: i've done software engineering during my internships at <a href="https://oracle.com" target="_blank">Oracle</a> and <a href="https://sofi.com" target="_blank">SoFi</a>, and quantitative trading during my internship at <a href="https://www.virtu.com/" target="_blank">Virtu Financial</a>. </p>
+                <p>i'm still figuring out the overarching theme of my playlist, but i want it to feel magical, just like some of the things i'm passionate about. i am interested in algorithms and cryptography--specifically <a href = "https://en.wikipedia.org/wiki/Zero-knowledge_proof" target="_blank">zero knowledge</a>. i am also a TA for <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank">6.1210 (6.006)</a>, MIT's introductory algorithms course, and was the co-chair of the <a href="http://comm.mit.edu" target="_blank">Council for Math Majors</a>. outside of school, i enjoy running, singing, and eating dark chocolate.</p>        
+            </div>
         </div>
-    </nav>
-    <div class = "container">
-        <div class = "title">
-            hii!! i'm vishruti.
+        <div class = "socialsdesc"><p>i love new music and new people. please reach out for any reason : )</p></div>
+        <div class = "socials">
+            <a href = "https://github.com/vishady721" target="_blank"><img class="github"></a>
+            <a href = "https://open.spotify.com/user/vishady721?si=715ea03087504776" target="_blank"><img class="spotify"></a>
+            <a href = "mailto:vishruti@mit.edu" target="_blank"><img class="email"></a>
         </div>
-    <p>i'm currently a senior at MIT, majoring in math and computer science, and minoring in music. in the past, i've done software engineering during my internships at <a href="https://oracle.com" target="_blank">Oracle</a> and <a href="https://sofi.com" target="_blank">SoFi</a>, and quantitative trading during my internship at <a href="https://www.virtu.com/" target="_blank">Virtu Financial</a>. i am interested in algorithms and cryptography--specifically <a href = "https://en.wikipedia.org/wiki/Zero-knowledge_proof" target="_blank">zero knowledge</a>.</p>
-    <p>i am also a TA for <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank">6.1210 (6.006)</a>, MIT's introductory algorithms course, and was the co-chair of the <a href="http://comm.mit.edu" target="_blank">Council for Math Majors</a>. outside of school, i enjoy running, singing, and eating dark chocolate.</p>
-    <div class = "socialsdesc"><p>please reach out for any reason : )</p></div>
-    <div class = "socials">
-        <a href = "https://github.com/vishady721" target="_blank"><img class="github"></a>
-        <a href = "https://open.spotify.com/user/vishady721?si=715ea03087504776" target="_blank"><img class="spotify"></a>
-        <a href = "mailto:vishruti@mit.edu" target="_blank"><img class="email"></a>
     </div>
-    </div>
+    
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <footer>
-        <p>vishruti ganesh</p>
-      </footer>
+        <p>created by vishruti ganesh. design inspiration from alex nwigwe.</p>
+    </footer>
+    
+    
     <script>
         window.onscroll = function() {myFunction()};
         
@@ -54,14 +118,13 @@
             navbar.classList.remove("sticky");
           }
         }
-        </script>
-        <script>
-            // Select the button
-            const btn = document.querySelector('.btn-toggle');
-            btn.addEventListener('click', function() {
-            document.querySelector('body').classList.toggle('dark-theme');  
-            })
-        </script>
+    </script>
+    <script>
+        const btn = document.querySelector('.btn-toggle');
+        btn.addEventListener('click', function() {
+        document.querySelector('body').classList.toggle('dark-theme');  
+        })
+    </script>
     
 </body>
 </html>
