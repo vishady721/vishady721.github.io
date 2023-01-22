@@ -58,7 +58,7 @@ body.dark-theme {
     padding-top: 30px;
     background-color: rgba(255, 255, 255, 0);
     color: rgb(61, 61, 61);
-    font-size: 12px;
+    font-size: 10px;
     display: block;
   }
 
@@ -220,6 +220,7 @@ body.dark-theme {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .socialsdesc {
@@ -479,9 +480,48 @@ color: rgb(255, 202, 255);
  justify-content: center;
 }
 
+
 .playlistdesc {
   padding-inline: 3% 3%;
   font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .box {
+    padding-inline: 5% 5%;
+    justify-content: center;
+  }
+
+  .playlistimage {
+    padding-top: 5%;
+    justify-content: center;
+    display: flex;
+  }
+  .playlistimage img {
+    width: 250px;
+  }
+  .playlisttop {
+    flex-direction: column;
+  }
+
+  .playlisttitle {
+    padding-top: 5%;
+    font-size: 45px;
+    padding-inline: 5% 5%;
+    padding-bottom: 5%;
+  }
+
+  .playlistmeta {
+    font-size: 13px;
+  }
+
+  .playlistdesc {
+    padding-inline: 5% 5%;
+  }
+
+  .socials {
+    justify-content: center;
+  }
 }
 
 .buttons {
