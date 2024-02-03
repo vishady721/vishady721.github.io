@@ -434,6 +434,7 @@ button {
   padding-inline: 23% 23%;
   display: flex;
   flex-direction: column;
+  flex-direction: row;
 }
 
 
@@ -467,6 +468,7 @@ color: rgb(255, 202, 255);
 
 .playlistimage img{
   width: 210px;
+  display: flex;
 }
 
 .playlisttop {
@@ -487,7 +489,7 @@ color: rgb(255, 202, 255);
   font-size: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 920px) {
   .box {
     padding-inline: 5% 5%;
     justify-content: center;
