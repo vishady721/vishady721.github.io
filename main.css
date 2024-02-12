@@ -3,6 +3,23 @@
     src: url("ZillaSlab-Light.ttf");
   }
 
+.dark-box {
+    padding-top: 5%;
+    padding-inline: 15% 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+.dark-box .darkbutton .buttondark {
+  content: url("darkmode.png");
+  width: 40px;
+}
+
+.dark-theme .dark-box .darkbutton .buttondark {
+  content: url("lightmode.png");
+  width: 40px;
+}
 
 body {
     margin: 4px;
@@ -430,7 +447,7 @@ button {
 
 
 .box {
-  padding-top: 6%;
+  padding-top: 1%;
   padding-inline: 23% 23%;
   display: flex;
   flex-direction: column;
@@ -454,6 +471,10 @@ button {
   font-size: 17px;
   color:rgb(61, 61, 61);
   text-align: left;
+}
+
+.dark-theme .playlistmeta {
+  color: rgb(238, 238, 238);
 }
 
 a {
@@ -489,7 +510,21 @@ color: rgb(255, 202, 255);
 }
 
 @media screen and (max-width: 920px) {
+  
+  .dark-box {
+    padding-inline: 5% 5%;
+  }
+
+  .dark-box .darkbutton .buttondark {
+    width: 30px;
+  }
+  
+  .dark-theme .dark-box .darkbutton .buttondark {
+    width: 30px;
+  }
+
   .box {
+    padding-top: 0%;
     padding-inline: 5% 5%;
     justify-content: center;
   }
@@ -544,8 +579,45 @@ color: rgb(255, 202, 255);
   color: rgb(61, 61, 61);
   text-align: center;
 }
+
+.dark-theme .navbutton a {
+  color: rgb(238, 238, 238);
+}
+
+.dark-theme .navbutton a:hover {
+  color: white;
+}
+
+.dark-theme .navbutton a.active {
+  color: rgb(255, 202, 255);
+}
+
 .navbutton img {
   width: 40px;
+}
+
+.navbutton .play {
+  content: url("play.png")
+}
+
+.navbutton .shuffle {
+  content: url("shuffle.png")
+}
+
+.navbutton .loop {
+  content: url("loop.png")
+}
+
+.dark-theme .navbutton .play {
+  content: url("play-dark.png")
+}
+
+.dark-theme .navbutton .shuffle {
+  content: url("shuffle-dark.png")
+}
+
+.dark-theme .navbutton .loop {
+  content: url("loop-dark.png")
 }
 
 .navbutton a:hover {

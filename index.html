@@ -17,6 +17,35 @@
     </head>
 <body>
 
+    <div class = "dark-box">
+        <button class="darkbutton" id="toggle">
+            <img class="buttondark">
+        </button>
+    </div>
+    
+    <script>
+        // Get the toggle button
+        const toggle = document.getElementById("toggle");
+        var body = document.body;
+        // Get the user's preference from localStorage
+        const darkMode = localStorage.getItem("dark-mode");
+        // Check if the user has already chosen a theme
+        if (darkMode) {
+            // If yes, apply it to the root element
+            body.classList.add("dark-theme");
+        }
+        // Add an event listener to the toggle button
+        toggle.addEventListener("click", () => {
+            // Toggle the dark-theme class on the root element
+            body.classList.toggle("dark-theme");
+            // Store or remove the user's preference in localStorage
+            if (body.classList.contains("dark-theme")) {
+                localStorage.setItem("dark-mode", true);
+            } else {
+                localStorage.removeItem("dark-mode");
+            }
+        });
+    </script>
     <div class = "box">
         
         <div class = "playlist">
@@ -24,7 +53,7 @@
                 
                 <div class = "navbutton">
                     <a href="/" class="active">
-                    <img src="play.png">
+                    <img class="play">
                     <div class = "navbuttontitle">
                         home
                     </div>
@@ -34,7 +63,7 @@
                 
                 <div class = "navbutton">
                     <a href="/thoughts">
-                    <img src="shuffle.png">
+                    <img class="shuffle">
                     <div class = "navbuttontitle">
                         thoughts
                     </div>
@@ -54,7 +83,7 @@
                 
                 <div class = "navbutton">
                     <a href="/favorites">
-                    <img src="loop.png">
+                    <img class="loop">
                     <div class = "navbuttontitle">
                         favorites
                     </div>
