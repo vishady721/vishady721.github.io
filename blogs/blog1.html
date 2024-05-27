@@ -13,15 +13,44 @@
         <link rel="stylesheet" type="text/css" href="../main.css">
         <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
         <title>Vishruti Ganesh</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
     </head>
 <body>
+    <div class = "dark-box">
+        <button class="darkbutton" id="toggle">
+            <img class="buttondark">
+        </button>
+    </div>
+    
+    <script>
+        // Get the toggle button
+        const toggle = document.getElementById("toggle");
+        var body = document.body;
+        // Get the user's preference from localStorage
+        const darkMode = localStorage.getItem("dark-mode");
+        // Check if the user has already chosen a theme
+        if (darkMode) {
+            // If yes, apply it to the root element
+            body.classList.add("dark-theme");
+        }
+        // Add an event listener to the toggle button
+        toggle.addEventListener("click", () => {
+            // Toggle the dark-theme class on the root element
+            body.classList.toggle("dark-theme");
+            // Store or remove the user's preference in localStorage
+            if (body.classList.contains("dark-theme")) {
+                localStorage.setItem("dark-mode", true);
+            } else {
+                localStorage.removeItem("dark-mode");
+            }
+        });
+    </script>
     <div class="box">
     <div class = "buttons">
                 
         <div class = "navbutton">
             <a href="/">
-            <img src="../play.png">
+            <img class="play">
             <div class = "navbuttontitle">
                 home
             </div>
@@ -31,7 +60,7 @@
         
         <div class = "navbutton">
             <a href="/thoughts">
-            <img src="../shuffle.png">
+            <img class="shuffle">
             <div class = "navbuttontitle">
                 thoughts
             </div>
@@ -51,7 +80,7 @@
         
         <div class = "navbutton">
             <a href="/favorites">
-            <img src="../loop.png">
+            <img class="loop">
             <div class = "navbuttontitle">
                 favorites
             </div>
@@ -75,9 +104,9 @@
             for as long as i can remember, the passage of time has deeply stressed me out. i never wanted to be old enough to lose teeth, i did not want to stop qualifying for child tickets at the theaters, the thought of not being a teenager anymore terrified me, and I dread Fridays because that means another week has passed.<br><br>
             so naturally, the end of a semester is always bittersweet. while i look forward to the break, i can't help but think that yet another semester has passed. with a 7 hour flight from Boston to San Francisco (i have no idea why it's so long), i have a lot of time on my hands. i pull an all-nighter the day before my flights (something about maximizing the time i have with my friends before i leave, even though it doesn't <i>really</i> make sense). but somehow, on the flight itself, i'm always too stressed to sleep, or even consume any kind of media. instead, i open my laptop up on a completely dark flight, and start furiously typing.<br><br>
             i read an article a couple years ago about how it's <a href = "https://thepointsguy.com/guide/why-you-cry-on-airplanes/" target = "_blank">common to cry while flying</a>. it helped rationalize the amount of emotion i feel in-air, only to land and think i was freaking out over nothing. eventually i decided that because i <i>think</i> so much during my flights, i needed to start writing those thoughts down. it started with the Notes app and eventually moved to <a href = "https://notion.so" target = "_blank">Notion</a>, where i store my deepest thoughts and reflections on myself, the semester, and everything in between, in the form of letters i write to myself. <br><br>
-            no one is ever going to see what i write except myself (and maybe the people sitting next to me, if they (validly) choose to spy)--so i see my letters as a chance to time-travel. i am able to communicate to my future self based on what i experienced in a semester, nevertheless, in a state of heightened emotion. i make promises to myself for the next semester, i remind myself of mistakes i made, and i somehow try to capture the memories that already start to blur. the first time i did this, i thought i was going to look back at my letters and cringe at myself. and as embarrassing as they are, as emotional as i am in-air, they have somehow started to shape my life. i re-read them more often than i'd like to admit, but they always teach me something i didn't know about myself.<br><br>
-            every time i fly home--every time i write these letters--i'm afraid to internalize the fact that another period of my life has passed. i read that <a href = "https://qz.com/1516804/physics-explains-why-time-passes-faster-as-you-age#:~:text=As%20you%20get%20older%2C%20the,that%20lead%20to%20crossed%20signals." target = "_blank">the reason time flies</a> as we grow older is because the weight of one unit of time compared to the rest of our life decreases. for example, when one year passes when you are two years old, literally half your life has passed, whereas by the time you're 80, one year is such a small fraction of your life that it feels like it moved so quickly. i thought i would know what i wanted to do after i graduate during my flight back home after junior spring. i didn't. then i thought i would have it all figured out after my flight back home from New York, after my summer internship. by the time i flew back home this winter, i knew i still didn't have any answers. i want to do something that helps me achieve purpose, but i'm afraid that by the time i find that out, the units of time that pass are going to feel infinitessimally small.<br><br>
-            but eventually i did lose teeth, and i was fine. i started buying my own movie tickets--adult tickets--but watching a movie in the theater is still magical. every time a week ends, the next week starts and i forget about the dread of the weekend like it never happened. right now, my desire to achieve purpose with the pressure of time passing makes me feel uneasy, but what i felt my purpose was as a four year-old who didn't want to lose teeth, in many ways, is a lot different from the purpose i feel now. so it's okay that i'm 21, it's okay that i'm at my last semester of college and i have no idea what i want to do, it's okay that time passes--because my purpose will change, and so will the letters i write to myself--and the time i have will never be enough.
+            no one is ever going to see what i write except myself (and maybe the people sitting next to me, if they (validly) choose to spy)—so i see my letters as a chance to time-travel. i am able to communicate to my future self based on what i experienced in a semester, nevertheless, in a state of heightened emotion. i make promises to myself for the next semester, i remind myself of mistakes i made, and i somehow try to capture the memories that already start to blur. the first time i did this, i thought i was going to look back at my letters and cringe at myself. and as embarrassing as they are, as emotional as i am in-air, they have somehow started to shape my life. i re-read them more often than i'd like to admit, but they always teach me something i didn't know about myself.<br><br>
+            every time i fly home—every time i write these letters—i'm afraid to internalize the fact that another period of my life has passed. i read that <a href = "https://qz.com/1516804/physics-explains-why-time-passes-faster-as-you-age#:~:text=As%20you%20get%20older%2C%20the,that%20lead%20to%20crossed%20signals." target = "_blank">the reason time flies</a> as we grow older is because the weight of one unit of time compared to the rest of our life decreases. for example, when one year passes when you are two years old, literally half your life has passed, whereas by the time you're 80, one year is such a small fraction of your life that it feels like it moved so quickly. i thought i would know what i wanted to do after i graduate during my flight back home after junior spring. i didn't. then i thought i would have it all figured out after my flight back home from New York, after my summer internship. by the time i flew back home this winter, i knew i still didn't have any answers. i want to do something that helps me achieve purpose, but i'm afraid that by the time i find that out, the units of time that pass are going to feel infinitessimally small.<br><br>
+            but eventually i did lose teeth, and i was fine. i started buying my own movie tickets—adult tickets—but watching a movie in the theater is still magical. every time a week ends, the next week starts and i forget about the dread of the weekend like it never happened. right now, my desire to achieve purpose with the pressure of time passing makes me feel uneasy, but what i felt my purpose was as a four year-old who didn't want to lose teeth, in many ways, is a lot different from the purpose i feel now. so it's okay that i'm 21, it's okay that i'm at my last semester of college and i have no idea what i want to do, it's okay that time passes—because my purpose will change, and so will the letters i write to myself—and the time i have will never be enough.
         </div>
     </div>
 

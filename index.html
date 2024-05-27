@@ -17,6 +17,35 @@
     </head>
 <body>
 
+    <div class = "dark-box">
+        <button class="darkbutton" id="toggle">
+            <img class="buttondark">
+        </button>
+    </div>
+    
+    <script>
+        // Get the toggle button
+        const toggle = document.getElementById("toggle");
+        var body = document.body;
+        // Get the user's preference from localStorage
+        const darkMode = localStorage.getItem("dark-mode");
+        // Check if the user has already chosen a theme
+        if (darkMode) {
+            // If yes, apply it to the root element
+            body.classList.add("dark-theme");
+        }
+        // Add an event listener to the toggle button
+        toggle.addEventListener("click", () => {
+            // Toggle the dark-theme class on the root element
+            body.classList.toggle("dark-theme");
+            // Store or remove the user's preference in localStorage
+            if (body.classList.contains("dark-theme")) {
+                localStorage.setItem("dark-mode", true);
+            } else {
+                localStorage.removeItem("dark-mode");
+            }
+        });
+    </script>
     <div class = "box">
         
         <div class = "playlist">
@@ -24,7 +53,7 @@
                 
                 <div class = "navbutton">
                     <a href="/" class="active">
-                    <img src="play.png">
+                    <img class="play">
                     <div class = "navbuttontitle">
                         home
                     </div>
@@ -34,7 +63,7 @@
                 
                 <div class = "navbutton">
                     <a href="https://vishady.substack.com/">
-                    <img src="shuffle.png">
+                    <img class="shuffle">
                     <div class = "navbuttontitle">
                         thoughts
                     </div>
@@ -54,7 +83,7 @@
                 
                 <div class = "navbutton">
                     <a href="/favorites">
-                    <img src="loop.png">
+                    <img class="loop">
                     <div class = "navbuttontitle">
                         favorites
                     </div>
@@ -69,13 +98,13 @@
                 <div class = "playlisttitle">
                     hii!! i'm vishruti.
                     <div class = "playlistmeta">
-                        PUBLIC PLAYLIST • 21 songs
+                        PUBLIC PLAYLIST • 22 songs
                     </div>
                 </div>
             </div>
             <div class = "playlistdesc">
-                <p>welcome to my playlist: a discontinuous collection of songs--a (not so) random sampling of my life--that i choose to share with you. thank you for taking the time to listen, and i hope that maybe some of these songs will make it to your playlist too!</p>
-                <p>i'm still figuring out the overarching theme of my playlist, but i want it to feel magical, just like some of the things i'm passionate about. i am a TA for <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank">6.1210 (6.006)</a>, MIT's introductory algorithms course, and was the co-chair of the <a href="http://comm.mit.edu" target="_blank">Council for Math Majors</a>. outside of things like algorithms and cryptography, i enjoy running, singing, and eating dark chocolate.</p>        
+                <p>welcome to my playlist: a discontinuous collection of songs—a (not so) random sampling of my life—that i choose to share with you. thank you for taking the time to listen, and i hope that maybe some of these songs will make it to your playlist too!</p>
+                <p>i'm still figuring out the overarching theme of my playlist, but i want it to feel magical, just like some of the things i'm passionate about. i was a TA for <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank">6.1210 (6.006)</a>, MIT's introductory algorithms course, and was the co-chair of the <a href="http://comm.mit.edu" target="_blank">Council for Math Majors</a>. now i get to do math stuff at <a href="https://www.modulus.xyz/" target="_blank">Modulus Labs</a>! outside of things like algorithms and cryptography, i enjoy running, singing, and eating dark chocolate.</p>        
             </div>
             <div class = "socialsdesc"><p>i love new music and new people. please reach out for any reason : )</p></div>
             <div class = "socials">
