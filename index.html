@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEBXH6EF2G"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'G-QEBXH6EF2G');
-        </script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
-        <title>Vishruti Ganesh</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap" rel="stylesheet">
+    <title>Vishruti Ganesh</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
 <body>
 
-    <div class = "dark-box">
+    <div class="dark-box">
         <button class="darkbutton" id="toggle">
             <img class="buttondark">
         </button>
     </div>
-    
+
     <script>
         // Get the toggle button
         const toggle = document.getElementById("toggle");
@@ -46,114 +40,33 @@
             }
         });
     </script>
-    <div class = "box">
-        
-        <div class = "playlist">
-            <div class = "buttons">
-                
-                <div class = "navbutton">
-                    <a href="/" class="active">
-                    <img class="play">
-                    <div class = "navbuttontitle">
-                        home
-                    </div>
-                    </a>
-                </div>
-                
-                
-                <div class = "navbutton">
-                    <a href="https://vishady.substack.com/" target="_blank">
-                    <img class="shuffle">
-                    <div class = "navbuttontitle">
-                        thoughts
-                    </div>
-                    </a>
-                </div>
-                
-                
-                <!-- <div class = "navbutton">
-                    <a href="/projects">
-                    <img src="shuffle.png">
-                    <div class = "navbuttontitle">
-                        projects
-                    </div>
-                    </a>
-                </div> -->
-                
-                
-                <div class = "navbutton">
-                    <a href="/favorites">
-                    <img class="loop">
-                    <div class = "navbuttontitle">
-                        favorites
-                    </div>
-                    </a>
-                </div>
-                
+    <div class="box">
+
+        <div class="playlist">
+
+            <div class="playlisttitle">
+                Hii!! I'm Vishruti.
             </div>
-            <div class = "playlisttop">
-                <div class = "playlistimage">
-                    <img src = "mainpage.png">
-                </div>
-                <div class = "playlisttitle">
-                    hii!! i'm vishruti.
-                    <div class = "playlistmeta">
-                        PUBLIC PLAYLIST • 22 songs
-                    </div>
-                </div>
+            <div class="playlistdesc">
+
             </div>
-            <div class = "playlistdesc">
-                <p>welcome to my playlist: a discontinuous collection of songs—a (not so) random sampling of my life—that i choose to share with you. thank you for taking the time to listen, and i hope that maybe some of these songs will make it to your playlist too!</p>
-                <p>i'm still figuring out the overarching theme of my playlist, but i want it to feel magical, just like some of the things i'm passionate about. i was a TA for <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank">6.1210 (6.006)</a>, MIT's introductory algorithms course, and was the co-chair of the <a href="http://comm.mit.edu" target="_blank">Council for Math Majors</a>. now i get to do math stuff at <a href="https://www.modulus.xyz/" target="_blank">Modulus Labs</a>! outside of things like algorithms and cryptography, i enjoy running, singing, and eating dark chocolate.</p>        
+            <div class="socialsdesc">
+                <p>Please reach out for any reason :•)</p>
             </div>
-            <div class = "socialsdesc"><p>i love new music and new people. please reach out for any reason : )</p></div>
-            <div class = "socials">
-                <a href = "https://github.com/vishady721" target="_blank"><img class="github"></a>
-                <a href = "https://open.spotify.com/user/vishady721?si=715ea03087504776" target="_blank"><img class="spotify"></a>
-                <a href = "mailto:vishruti@mit.edu" target="_blank"><img class="email"></a>
+            <div class="socials">
+                <a href="mailto:vishruti@cmu.edu" target="_blank"><img class="email"></a>
             </div>
         </div>
-        
+
     </div>
-    
 
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <footer>
-        <p>website created by vishruti ganesh. design inspired by alex nwigwe.</p>
-    </footer>
-    
-    
-    <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementsByClassName("topnav")[0];
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-    </script>
     <script>
         const btn = document.querySelector('.btn-toggle');
-        btn.addEventListener('click', function() {
-        document.querySelector('body').classList.toggle('dark-theme');  
+        btn.addEventListener('click', function () {
+            document.querySelector('body').classList.toggle('dark-theme');
         })
     </script>
-    
+
 </body>
+
 </html>
